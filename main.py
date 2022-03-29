@@ -1,6 +1,5 @@
 import streamlit as st
-#sudo pip install imblearn
-#pip install imblearn
+import imblearn
 
 import numpy as np
 import pandas as pd
@@ -16,9 +15,9 @@ import pandas as pd
 import numpy as np
 data = pd.read_csv('\credit card fraud.csv')
 
-#df=st.cache(pd.read_csv)('credit card fraud.csv')
-#df = df.sample(frac=0.1, random_state = 48)
-#C:\Users\Akshata\Downloads\credit card fraud.csv
+df=st.cache(pd.read_csv)('credit card fraud.csv')
+df = df.sample(frac=0.1, random_state = 48)
+
 
 # Load the dataset from the csv file using pandas
 df=st.cache(pd.read_csv)('\creditcard.csv')
